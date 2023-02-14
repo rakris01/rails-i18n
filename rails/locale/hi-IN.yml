@@ -37,8 +37,8 @@ hi-IN:
     - शनिवार
     formats:
       default: "%d-%m-%Y"
-      long: "%B %d, %Y"
-      short: "%b %d"
+      long: "%d %B %Y"
+      short: "%d %b"
     month_names:
     - 
     - जनवरी
@@ -63,10 +63,10 @@ hi-IN:
         one: लग - भग एक घंटा
         other: लग - भग %{count} घंटा
       about_x_months:
-        one: लग - भग 1 महीना
+        one: लग - भग %{count} महीना
         other: लग - भग %{count} महीना
       about_x_years:
-        one: लग - भग 1 साल
+        one: लग - भग %{count} साल
         other: लग - भग %{count} साल
       almost_x_years:
         one: लग - भग एक साल
@@ -191,6 +191,6 @@ hi-IN:
     am: am
     formats:
       default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%B %d, %Y %H:%M"
+      long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
     pm: pm

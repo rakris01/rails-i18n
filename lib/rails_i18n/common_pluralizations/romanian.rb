@@ -3,12 +3,15 @@
 module RailsI18n
   module Pluralization
     module Romanian
+      FROM_1_TO_19 = (1..19).to_a.freeze
+
       def self.rule
         lambda do |n|
-          n ||= 0
+          return :other unless n.is_a?(Numeric)
+
           if n == 1
             :one
-          elsif n == 0 || (1..19).to_a.include?(n % 100)
+          elsif n == 0 || FROM_1_TO_19.include?(n % 100)
             :few
           else
             :other

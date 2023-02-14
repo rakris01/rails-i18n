@@ -1,4 +1,135 @@
-## 6.0.0
+## unreleased
+
+- Non-numerics counts are considered as `other` in all pluralizations #1067
+- Update following locales:
+  - Japanese (ja): Add `in` and `round_mode` keys #1059
+  - English (en-ZA): ZAR currency format #1066
+  - Afrikaan (af): ZAR currency format #1066
+
+## 7.0.6 (2022-11-08)
+
+- Add option to choose which modules (locales, pluralization, transliteration,
+  ordinals) are enabled #1019
+- Add following locales:
+  - Dzongkha (dz) #1052
+  - Sardinian (sc) #1030
+  - Swedish (sv-FI): Finland’s native Swedish-speakers #1055
+- Update following locales:
+  - Bengali (bn): Fix date and spelling issues #1031
+  - Chinese (zh-HK, zh-TW, zh-YUE, zh-CN):
+    - Simplify pluralization #1032 #1033 #1036
+    - Standardize punctuation #997
+  - English (en, en-CY, en-IE, en-TT, en-US, en-ZA):
+    - Add pluralization #1021
+    - Add `in` and `round_mode` keys #1042
+  - French (fr, fr-CA, fr-CH, fr-CA):
+    - Change an abreviation for March month in abbr_month_names #1002
+    - Add `in` and `round_mode` keys #1046
+  - Galician (gl): Add missing accent on `incluído` #961
+  - German (de-AT, de-CH, de-DE, de):
+    - Add transliteration rule for `ẞ` #1025
+    - Add `eb` and `pb` storage units #1043
+    - Add `round_mode` key #1044
+  - Greek (el-CY): Add pluralization #1022
+  - Japanese (ja): Simplify pluralization #1038
+  - Korean (ko):
+    - Language improvements #989
+    - Simplify pluralization #1037
+  - Latvian (lv): Add multiple missing translations #966
+  - Spanish (es, es-419, es-AR, es-CL, es-CO, es-CR, es-ES, es-MX, es-NI, es-PA,
+    es-PE, es-US, es-VE): Add `round_mode` key #1045
+  - Swedish (sv-SE): Adjust precision and add some missing keys #1047
+  - Vietnamese (vi):
+    - Update translation for taken #1009
+    - Simplify pluralization #1035
+- Removed pluralizations rules that do not have locale files: ak, am, bh, bm,
+  bo, br, by, cy, dz, ff, ga, gd, guw, gv, ig, ii, iu, jv, kab, kde, kea, ksh,
+  kw, lag, ln, mo, mt, my, naq, nso, root, sah, se, ses, sg, sh, shi, sma, smi,
+  smj, smn, sms, ti, to, tzm, wa, yo, zh #1017
+- Change instances of the `one` pluralization key to use `%{count}` interpolation #993
+
+## 7.0.5 (2022-07-03)
+
+- No changes.
+
+## 7.0.4 (2022-07-03)
+
+- Add following locales:
+  - Western Frisian (fy) #985
+  - Kazakh (kk) #945
+- Update following locales:
+  - Slovak (sk): Fixed missing message #994
+  - French (fr): Revert remainder of NBSP characters #996
+  - French (fr): Use no-padded date format #991
+  - Arabic (ar): fix errors.messages.greater_than typo #998
+  - South slavic pluralizers #987
+- Update update.rb to fetch active_model locale #1000
+- Remove eager loading of translations during boot phase (this is now done by Rails). #983
+
+## 7.0.3 (2022-03-01)
+
+- Revert long date formats on default "en" locale #980
+
+## 7.0.2 (2022-02-12)
+
+- Fix long date format for many locales #939 #943
+- Update following locales:
+  - Chinese (zh-TW) #941
+  - Croatian (hr) #940
+  - Danish (da) #802 #946 #947 #948
+  - Finnish (fi) #949
+  - French (fr) #968
+  - Galician (gl) #961
+  - Papiamento (pap-AW, pap-CW) #974 #975
+  - Serbian (sr) #972
+  - Spanish (es, es-CL, es-ES) #936
+  - Swedish (sv) #935
+  - Tamil (ta) #953
+- Fix require statement in `rails/pluralization/tr` #964
+- Add rails/ordinals to s.files in Gemspec #969
+- Update i18n-tasks to be ActiveSupport 7+ ready #970
+
+## 7.0.1 (2021-12-24)
+
+- Fix ordinals loading.
+
+## 7.0.0 (2021-12-23)
+
+- Support Rails 7
+- Drop support for Ruby 1.8
+- Eager load translations during boot phase if possible.
+- Translate ordinals (fr, fr-FR, fr-CA, fr-BE)
+- Update following locales:
+  - Albanian (sq)
+  - Catalan (ca)
+  - Chinese (zh-CN, zh-TW)
+  - Croatian (hr)
+  - Danish (da)
+  - Finnish (fi)
+  - French (fr, fr-FR, fr-CA, fr-BE)
+  - Georgian (ka)
+  - German (de)
+  - Greek (el, el-CY)
+  - Italian (it, it-CH)
+  - Latvian (lv)
+  - Lithuanian (lt)
+  - Norwegian (nb)
+  - Polish (pl)
+  - Portuguese (pt-BR)
+  - Romanian (ro)
+  - Serbian (sr)
+  - Spanish (es-CO, es-AR)
+  - Swedish (sv)
+  - Turkish (tr)
+  - Ukrainian (uk)
+  - Vietnamese (vi)
+- Add following locales:
+  - English Trinidad & Tobago (en-TT)
+  - Papiamento (pap-AW, pap-CW)
+  - Sesotho (st)
+
+## 6.0.0 (2019-08-17)
+
 - Update rails-i18n.gemspec to use Railties 6.0.0
 - Add Malagasy (mg) locale
 - Update following locales:

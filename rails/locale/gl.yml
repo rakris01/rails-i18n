@@ -59,49 +59,49 @@ gl:
         one: aproximadamente unha hora
         other: "%{count} horas"
       about_x_months:
-        one: aproximadamente 1 mes
+        one: aproximadamente %{count} mes
         other: "%{count} meses"
       about_x_years:
-        one: aproximadamente 1 ano
+        one: aproximadamente %{count} ano
         other: "%{count} anos"
       half_a_minute: medio minuto
       less_than_x_seconds:
         zero: menos dun segundo
-        one: 1 segundo
+        one: "%{count} segundo"
         few: poucos segundos
         other: "%{count} segundos"
       less_than_x_minutes:
         zero: menos dun minuto
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minutos"
       over_x_years:
         one: máis dun ano
         other: "%{count} anos"
       x_seconds:
-        one: 1 segundo
+        one: "%{count} segundo"
         other: "%{count} segundos"
       x_minutes:
-        one: 1 minuto
+        one: "%{count} minuto"
         other: "%{count} minuto"
       x_days:
-        one: 1 día
+        one: "%{count} día"
         other: "%{count} días"
       x_months:
-        one: 1 mes
+        one: "%{count} mes"
         other: "%{count} meses"
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: debe ser aceptado
-      blank: non pode estar en blanco
+      blank: non pode estar en branco
       confirmation: non coincide coa confirmación
-      empty: non pode estar valeiro
+      empty: non pode estar baleiro
       equal_to: debe ser igual a %{count}
       even: debe ser impar
       exclusion: xa existe
       greater_than: debe ser maior que %{count}
       greater_than_or_equal_to: debe ser maior ou igual que %{count}
-      inclusion: non está incluido na lista
+      inclusion: non está incluído na lista
       invalid: non é válido
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor ou igual que %{count}
@@ -114,8 +114,8 @@ gl:
     template:
       body: 'Atopáronse os seguintes problemas:'
       header:
-        one: 1 erro evitou que se poidese gardar o %{model}
-        other: "%{count} erros evitaron que se poidese gardar o %{model}"
+        one: "%{count} erro evitou que se puidese gardar o %{model}"
+        other: "%{count} erros evitaron que se puidese gardar o %{model}"
   number:
     currency:
       format:

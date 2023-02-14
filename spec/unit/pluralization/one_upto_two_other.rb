@@ -5,13 +5,13 @@ shared_examples 'one(upto 2)-other forms language' do
   end
 
   [0, 0.5, 1, 1.2, 1.8].each do |count|
-    it "detects that #{count} in category 'one'" do
+    it "detects that #{count.inspect} in category 'one'" do
       rule.call(count).should == :one
     end
   end
 
-  [2, 2.1, 5, 11, 21, 22, 37, 40, 900.5].each do |count|
-    it "detects that #{count} in category 'other'" do
+  [2, 2.1, 5, 11, 21, 22, 37, 40, 900.5, nil, "abc"].each do |count|
+    it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end
   end

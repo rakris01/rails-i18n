@@ -118,6 +118,11 @@ hr:
         few: "%{count} mjeseca"
         many: "%{count} mjeseci"
         other: "%{count} mjeseci"
+      x_years:
+        one: "%{count} godina"
+        few: "%{count} godine"
+        many: "%{count} godina"
+        other: "%{count} godina"
     prompts:
       second: Sekunde
       minute: Minuta
@@ -141,11 +146,13 @@ hr:
       invalid: nije ispravan
       less_than: mora biti manji od %{count}
       less_than_or_equal_to: mora biti manji ili jednak %{count}
+      model_invalid: 'Validacija nije uspjela: %{errors}'
       not_a_number: nije broj
       not_an_integer: nije cijeli broj
       odd: mora biti neparan
       other_than: mora biti različit od %{count}
       present: mora biti prazan
+      required: mora biti unesen
       taken: je već zauzet
       too_long:
         one: je predugačak (maksimum je %{count} znak)
@@ -165,17 +172,17 @@ hr:
     template:
       body: 'Sljedeća polja su neispravno popunjena:'
       header:
-        one: "%{count} greška je spriječila %{model} da se spremi"
-        few: "%{count} greške su spriječile %{model} da se spremi"
-        many: "%{count} grešaka je spriječilo %{model} da se spremi"
-        other: "%{count} grešaka je spriječilo %{model} da se spremi"
+        one: "%{count} greška je spriječila da se spremi %{model}"
+        few: "%{count} greške su spriječile da se spremi %{model}"
+        many: "%{count} grešaka je spriječilo da se spremi %{model}"
+        other: "%{count} grešaka je spriječilo da se spremi %{model}"
   helpers:
     select:
       prompt: Izaberite
     submit:
       create: Stvori %{model}
       submit: Spremi %{model}
-      update: Izmjeni %{model}
+      update: Izmijeni %{model}
   number:
     currency:
       format:
@@ -215,9 +222,11 @@ hr:
             few: bajta
             many: bajtova
             other: bajtova
+          eb: EB
           gb: GB
           kb: KB
           mb: MB
+          pb: PB
           tb: TB
     percentage:
       format:

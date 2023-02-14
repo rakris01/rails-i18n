@@ -4,7 +4,9 @@ module RailsI18n
   module Pluralization
     module OneUptoTwoOther
       def self.rule
-        lambda { |n| n && n >= 0 && n < 2 ? :one : :other }
+        lambda do |n|
+          n.is_a?(Numeric) && n >= 0 && n < 2 ? :one : :other
+        end
       end
 
       def self.with_locale(locale)

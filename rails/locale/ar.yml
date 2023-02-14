@@ -157,7 +157,7 @@ ar:
       equal_to: يجب أن يساوي طول %{attribute} %{count}
       even: يجب أن يكون عدد %{attribute} زوجياً
       exclusion: حقل %{attribute} محجوز
-      greater_than: ميجب أن يكون عدد %{attribute} أكبر من %{count}
+      greater_than: يجب أن يكون عدد %{attribute} أكبر من %{count}
       greater_than_or_equal_to: يجب أن يكون عدد %{attribute} أكبر أو يساوي %{count}
       inclusion: "%{attribute} غير وارد في القائمة"
       invalid: محتوى %{attribute} غير صالح
@@ -272,7 +272,7 @@ ar:
   time:
     am: صباحًا
     formats:
-      default: "%a %b %d %H:%M:%S %Z %Y"
-      long: "%d %B, %Y %H:%M"
+      default: "%a %d %b %Y %H:%M:%S %Z"
+      long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
     pm: مساءً

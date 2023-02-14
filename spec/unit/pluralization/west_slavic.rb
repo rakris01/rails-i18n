@@ -9,13 +9,13 @@ shared_examples 'West Slavic' do
   end
 
   [2, 3, 4].each do |count|
-    it "detects that #{count} in category 'few'" do
+    it "detects that #{count.inspect} in category 'few'" do
       rule.call(count).should == :few
     end
   end
 
-  [0, 0.5, 1.7, 2.1, 5, 7.8, 10, 875].each do |count|
-    it "detects that #{count} in category 'other'" do
+  [0, 0.5, 1.7, 2.1, 5, 7.8, 10, 875, nil, "abc"].each do |count|
+    it "detects that #{count.inspect} in category 'other'" do
       rule.call(count).should == :other
     end
   end
